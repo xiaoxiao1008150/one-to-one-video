@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Agora Open Duo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+      <!-- 待机画面 -->
+
+    <img id="daiji" src="../../assets/images/dp1.jpg" alt="">
+    <div class="wrapper" id="parent-wrapper" style="display: none">
+      <!-- 呼叫成功之后将视频流dom 插入到media container中 -->
+        <div id="media-container" class="clearfix" style="display:none">
+            <div id="m-main">
+              <img id="m-close" src="../../assets/images/close.png"  alt="">
+              <p>请稍后,正在与客服代表连线中...</p>
+              <div id="stream-main"></div>
+            </div>
+            <div id="m-side">
+              <div id="stream-side">
+              </div>
+              <p></p>
+            </div>
+        </div>
+        <!-- 被对方呼叫 -->
+       <div class="calledModal " id="metting" style="">
+        <p>设备编号:SHHHZ正在请求远程客服</p>
+        <div id="ca-imgs" class="clearfix">
+          <img id="firstimg" alt="" src="../../assets/images/1.png">
+          <img id="secoimg" src="../../assets/images/arrow.png">
+          <img id="thirdimg" src="../../assets/images/2.png">
+        </div>
+        <div id="icons">
+           <img src="../../assets/images/refuse.png" alt="" class="declineBtn">
+           <img id="icon-left" src="../../assets/images/answer.png" alt="" class="acceptBtn">
+        </div>
+      </div>
+    </div>
+    <script src="../../../static/AgoraSig.js"></script>
+</body>
+
+</html>
